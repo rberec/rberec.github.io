@@ -61,11 +61,13 @@ $$ \alpha(t,T) = \frac{1}{2} \sigma_B(t,T)' \sigma_B(t,T) $$
 
 By differentiating both sides with respect to $$T$$ we obtain
 
+$$
 \begin{align}
 \mu(t,T) &= \sigma_f(t,T)'\sigma_B(t,T) \\
 \\
 \mu(t,T) &= \sigma_f(t,T)' \int^T_t \sigma_f(t,s) ds
 \end{align}
+$$
 
 So the final stochastic differential equation for the instantaneous forward rate under the risk-free measure is of the following form
 
