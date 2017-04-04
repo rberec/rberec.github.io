@@ -36,35 +36,35 @@ Let $$X(t) = -\int_t^T f(t,s) ds$$, then
 
 \begin{align}
 dX(t) &= f(t,t)dt -\int_t^T df(t,s) ds \\\\
-&= r(t)dt - \int^T\_t \left[ \mu(t,s)dt + \sigma\_f(t,s)'dW(t) \right] ds
+&= r(t)dt - \int^T_t \left[ \mu(t,s)dt + \sigma_f(t,s)'dW(t) \right] ds
 \end{align}
 
 Next, by applying standard and stochastic Fubini theorem we get
 
 \begin{align}
-dX(t) &= r(t) dt - \int^T\_t \mu(t,s) ds\ dt - \int^T\_t \sigma\_f(t,s)' ds\ dW(t) \\\\
+dX(t) &= r(t) dt - \int^T_t \mu(t,s) ds\ dt - \int^T_t \sigma_f(t,s)' ds\ dW(t) \\\\
 \\\\
-&= r(t)dt - \alpha(t,T)dt - \sigma\_B(t,T)' dW(t)
+&= r(t)dt - \alpha(t,T)dt - \sigma_B(t,T)' dW(t)
 \end{align} 
 
-where $$\alpha(t,T) = \int^T\_t \mu(t,s) ds$$ and $$\sigma\_B(t,T)' = \int^T\_t \sigma\_f(t,s)' ds$$. We are almost there, now we can put all things together and using the very first equation and Ito's lemma
+where $$\alpha(t,T) = \int^T_t \mu(t,s) ds$$ and $$\sigma_B(t,T)' = \int^T_t \sigma_f(t,s)' ds$$. We are almost there, now we can put all things together and using the very first equation and Ito's lemma
 
 \begin{align}
  d Z(t,T) &= \exp ( X(t) ) dX(t) + \frac{1}{2} \exp ( X(t) ) (dX(t))^2 \\\\
 \\\\
- \frac{dZ(t,T)}{Z(t,T)}&= \left[ r(t) - \alpha(t,T) + \frac{1}{2} \sigma\_B(t,T)' \sigma\_B(t,T) \right] dt - \sigma\_B(t,T)' dW(t)
+ \frac{dZ(t,T)}{Z(t,T)}&= \left[ r(t) - \alpha(t,T) + \frac{1}{2} \sigma_B(t,T)' \sigma_B(t,T) \right] dt - \sigma_B(t,T)' dW(t)
 \end{align}
 
 Please note that under the risk-neutral measure the drift term for $$Z(t,T)$$ must be equal to $$r(t) Z(t,T)$$. We conclude following no-arbitrage condition which must hold for all $$T$$
 
-$$ \alpha(t,T) = \frac{1}{2} \sigma\_B(t,T)' \sigma\_B(t,T) $$
+$$ \alpha(t,T) = \frac{1}{2} \sigma_B(t,T)' \sigma_B(t,T) $$
 
 By differentiating both sides with respect to $$T$$ we obtain
 
 \begin{align}
-\mu(t,T) &= \sigma\_f(t,T)'\sigma\_B(t,T) \\
+\mu(t,T) &= \sigma_f(t,T)'\sigma_B(t,T) \\
 \\
-\mu(t,T) &= \sigma\_f(t,T)' \int^T\_t \sigma\_f(t,s) ds
+\mu(t,T) &= \sigma_f(t,T)' \int^T_t \sigma_f(t,s) ds
 \end{align}
 
 So the final stochastic differential equation for the instantaneous forward rate under the risk-free measure is of the following form
