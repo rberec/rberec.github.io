@@ -10,7 +10,7 @@ In this post we will quickly describe the model and derive the no-arbitrage cond
 
 ## Definitions and Relationships
 
-Let $f(t,T)$ be a *nominal instantaneous forward rate* at time $t$ with expiry $T$, $Z(t,T)$ be a *nominal zero coupon bond price* at time $t$ with maturity $T$. The relationship between the two is
+Let $f(t,T)$ be a *nominal instantaneous forward rate* at time $$t$$ with expiry $$T$$, $$Z(t,T)$$ be a *nominal zero coupon bond price* at time $t$ with maturity $T$. The relationship between the two is
 
 $$ Z(t,T) = \exp \left( \int_{t}^{T} f(t,s) {d} s \right) \quad \textrm{for all } T \in [0,\tau],t \in [0,T], $$
 
@@ -69,6 +69,6 @@ By differentiating both sides with respect to $T$ we obtain
 
 So the final stochastic differential equation for the instantaneous forward rate under the risk-free measure is of the following form
 
-$$ df(t,T) = \left[ \sigma\_f(t,T)' \int^T\_t \sigma\_f(t,s)ds \right] dt + \sigma_f(t,T)'dW(t) $$
+$$ df(t,T) = \left[ \sigma_f(t,T)' \int^T_t \sigma_f(t,s)ds \right] dt + \sigma_f(t,T)'dW(t) $$
 
 
