@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Test
+title: Simple Monte Carlo With Thrust
 author: rberec
-category:  random numbers, thrust, transform_reduce, cuda, monte carlo, sobol, mersenne twister
 ---
 
 We have already shown before how to set up *CUDA* in both Windows and Linux environment and how to create a simple project. Today we will demonstrate how easy it is to perform a simple Monte Carlo simulation using [Thrust](http://thrust.github.io/) library. We will do so by estimating $\pi$ with random numbers.
