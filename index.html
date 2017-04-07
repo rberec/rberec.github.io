@@ -8,7 +8,7 @@ title:  Blog Posts
 
   {% for post in site.posts %}
 	<h2> <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-	<time style="color:#9EABB3;font-size:0.95rem;" datetime='{{post.date | date: "%Y-%m-%d"}}'>{{post.date | date: "%d %B %Y"}}</time>
+	<time style="color:#9EABB3;font-size:0.95rem;" datetime='{{post.date | date: "%Y-%m-%d"}}'>{{post.date | date_to_long_string}}</time>
 	{{ post.excerpt }}
 	<hr>
   {% endfor %}
