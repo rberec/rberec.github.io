@@ -7,7 +7,9 @@ layout: default
 </script>
 
 <h1>{{ page.title }}</h1>
-<time style="color:#9EABB3;font-size:0.95rem;" datetime='{{page.date | date: "%Y-%m-%d"}}'>{{page.date | date_to_long_string}}</time>
+<section class="post-meta">
+	<time datetime='{{page.date | date: "%Y-%m-%d"}}'>{{page.date | date_to_long_string}}</time>
+</section>
 
 <div class="post">
   {{ content }}

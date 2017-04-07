@@ -4,6 +4,9 @@
 @import "{{ site.theme }}";
 
 .main-content {
+  h1 {
+    margin-bottom: 0rem;
+  }
   hr {
     height: 1px;
     padding: 0;
@@ -11,4 +14,10 @@
     background-color: $hr-border-color;
     border: 0;
   }
+}
+
+section.post-meta {
+  color:#9EABB3;
+  font-size:0.95rem;
+  margin-bottom: 1rem
 }
