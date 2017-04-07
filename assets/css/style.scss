@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.main-content {
+  hr {
+    height: 1px;
+    padding: 0;
+    margin: 1rem 0;
+    background-color: $hr-border-color;
+    border: 0;
+  }
+}
